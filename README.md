@@ -11,6 +11,12 @@ Final Project for **AI-Based Web Application Development and Deployment** (Embed
 This app integrates the **Watson NLP EmotionPredict API** to analyze text and return five emotions
 (**anger, disgust, fear, joy, sadness**) plus the **dominant emotion**. Built with **Flask**.
 
+## Quick Overview
+
+- **Built with:** Python, Flask
+- **Focus:** Detecting emotions in text using an NLP model and displaying the dominant emotion.
+- **What I learned:** API usage, Flask routing, text processing, and connecting a simple web interface to AI/NLP logic.
+
 ---
 
 ## ✨ Features
