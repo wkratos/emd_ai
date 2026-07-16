@@ -40,6 +40,31 @@ emd-ai/
 
 ---
 
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/wkratos/emb_ai.git
+cd emb_ai
+```
+Create and activate a virtual environment:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+On Windows PowerShell:
+```bash
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+Install the dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+---
+
 ## 🚀 Run
 
 ```bash
@@ -65,6 +90,10 @@ python3 -m unittest test_emotion_detection.py
 or
 ```bash
 python3 -m unittest tests/test_emotion_detection.py
+```
+or
+```bash
+python3 -m unittest discover -s tests
 ```
 
 Expected: all tests pass for dominant emotions:
