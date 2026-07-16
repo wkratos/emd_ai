@@ -23,6 +23,7 @@ This app integrates the **Watson NLP EmotionPredict API** to analyze text and re
 ---
 
 ## 📦 Project Structure
+```
 emd-ai/
 ├─ EmotionDetection/   
 │ └─ emotion_detection.py # Core Watson API integration + error handling     
@@ -35,6 +36,7 @@ emd-ai/
 ├─ test/    
 │ └─ test_emotion_detection.py # Unit tests   
 └─ README.md    
+```
 
 ---
 
