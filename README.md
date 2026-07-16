@@ -33,7 +33,7 @@ emd-ai/
 ├─ static/     
 │ └─ mywebscript.js # Provided JS (no edits required)     
 ├─ server.py # Flask app (routes: / and /emotionDetector)    
-├─ test/    
+├─ tests/    
 │ └─ test_emotion_detection.py # Unit tests   
 └─ README.md    
 ```
@@ -62,6 +62,11 @@ For the given statement, the system response is 'anger': 0.006, 'disgust': 0.003
 ```bash
 python3 -m unittest test_emotion_detection.py
 ```
+or
+```bash
+python3 -m unittest tests/test_emotion_detection.py
+```
+
 Expected: all tests pass for dominant emotions:
 
 - glad → joy
