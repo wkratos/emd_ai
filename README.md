@@ -42,9 +42,9 @@ emd-ai/
 
 ## 🚀 Run
 
-```bash```
+```bash
 python3 server.py
-
+```
 
 App runs on http://127.0.0.1:5000 (lab preview may proxy this).
 
@@ -59,9 +59,9 @@ For the given statement, the system response is 'anger': 0.006, 'disgust': 0.003
 
 ## 🧪 Tests
 
-```bash```
+```bash
 python3 -m unittest test_emotion_detection.py
-
+```
 Expected: all tests pass for dominant emotions:
 
 - glad → joy
@@ -89,9 +89,9 @@ If the Watson endpoint returns 400, detector returns the same all-None structure
 
 ## 🧹 Static Code Analysis (Pylint)
 
-```bash```
+```bash
 pylint server.py
-
+```
 
 Tips to get 10/10:
 
