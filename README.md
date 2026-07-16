@@ -24,18 +24,23 @@ This app integrates the **Watson NLP EmotionPredict API** to analyze text and re
 
 ## 📦 Project Structure
 ```
-emd-ai/
+emd_ai/
 ├─ EmotionDetection/   
 │ └─ emotion_detection.py # Core Watson API integration + error handling     
 │ └─ __init__.py # Core Watson API integration + error handling    
 ├─ templates/     
-│ └─ index.html # Provided UI (no edits required)      
+│ └─ index.html    
 ├─ static/     
-│ └─ mywebscript.js # Provided JS (no edits required)     
+│ └─ mywebscript.js  
 ├─ server.py # Flask app (routes: / and /emotionDetector)    
 ├─ tests/    
-│ └─ test_emotion_detection.py # Unit tests   
-└─ README.md    
+│ └─ test_emotion_detection.py # Unit tests
+├─requirements.txt
+├─LICENSE
+├─.gitignore
+└─ README.md
+
+
 ```
 
 ---
@@ -45,20 +50,26 @@ emd-ai/
 Clone the repository:
 
 ```bash
-git clone https://github.com/wkratos/emb_ai.git
+git clone https://github.com/wkratos/emd_ai.git
 cd emb_ai
 ```
+
 Create and activate a virtual environment:
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 ```
+
 On Windows PowerShell:
+
 ```bash
 python -m venv .venv
-.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
+
 Install the dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -71,7 +82,7 @@ pip install -r requirements.txt
 python3 server.py
 ```
 
-App runs on http://127.0.0.1:5000 (lab preview may proxy this).
+App runs on http://127.0.0.1:5000.
 
 UI: open / to load index.html.
 
@@ -126,8 +137,6 @@ If the Watson endpoint returns 400, detector returns the same all-None structure
 ```bash
 pylint server.py
 ```
-
-Tips to get 10/10:
 
 - Add module and function docstrings (already included)
 
